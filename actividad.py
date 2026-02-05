@@ -300,8 +300,9 @@ def get_recommendations():
     # HINT: Loop through friends_playlists.values() and use update()
     # OR: Use set union in a loop
     # YOUR CODE HERE:
-    all_friend_songs = friends_playlists.values()
-
+    all_friend_songs = set()
+    for playlist in friends_playlists.values():
+        all_friend_songs.update(playlist)
 
 
 
@@ -443,7 +444,6 @@ def view_stats():
         # Use intersection
 
         # YOUR CODE HERE:
-        common =
         print(f"   {friend}: {len(common)} songs in common")
 
 
