@@ -54,5 +54,5 @@ numbers.add(5)
 print(numbers)
 numbers.discard(5)
 
-friend1 = ['Avater','Titanic','Cars']
+friend1 = ['Avatar','Titanic','Cars']
 friend2 = ['Batman', 'Jaws','Avengers']
