@@ -428,13 +428,10 @@ def view_stats():
     # HINT: Use .issubset() or <= operator
     # EXAMPLE: favorites <= my_playlist
 
-    # YOUR CODE HERE:
-    if favorites is my_playlist:
-        favorites <= my_playlist
-
+    # YOUR CODE HERE:S
+    favorites.issubset(my_playlist)
     # TODO: Calculate percentage of playlist that are favorites
     # Handle the case where playlist is empty!
-
     # YOUR CODE HERE:
 
     # Compare with friends
@@ -476,16 +473,20 @@ def check_relationships():
 
     # TODO: Check various relationships
     # 1. Is my_playlist a subset of friend_songs?
+    my_playlist.issubset(friend_songs)
     # 2. Is my_playlist a superset of friend_songs?
+    my_playlist.issuperset(friend_songs)
     # 3. Are they disjoint (no common songs)?
+    my_playlist.isdisjoint(friend_songs)
     # 4. Are they equal?
-    #
     # HINT: Use .issubset(), .issuperset(), .isdisjoint()
     # HINT: Use == for equality
     # HINT: Use < for proper subset, > for proper superset
 
     # YOUR CODE HERE:
-    # Replace the pass with your comparison logic!
+    my_playlist.isdisjoint(friend_songs)
+    my_playlist.issuperset(friend_songs)
+    my_playlist.issubset(friend_songs)
     pass
 
 
